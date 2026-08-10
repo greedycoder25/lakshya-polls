@@ -52,11 +52,11 @@ JSON_HEADERS = {**HEADERS, "Content-Type": "application/json"}
 # ─── GROUPS ───────────────────────────────────────────────────────────────────
 
 GROUPS = [
-    {"name": "Group 1", "groupId": "69cb7c5e4a6bd7893a91aa22", "conversationId": "69ce5c7c8a5087b50b14c482"},
-    {"name": "Group 2", "groupId": "69cb7c67e223436a272111c9", "conversationId": "69ce5d26b3e8f731557c9116"},
-    {"name": "Group 3", "groupId": "69cb7c6cd6e4a400b77ebccc", "conversationId": "69ce5f7b369fd47f199d51a8"},
-    {"name": "Group 4", "groupId": "69cb7c7036b09e3dea135a30", "conversationId": "69ce60754bd6bffed97b9eeb"},
-    {"name": "Group 5", "groupId": "69cb7c7426c54583a30f3039", "conversationId": "69ce60a65155c4ac4c289fea"},
+    {"name": "Group 1", "groupId": "69d6e56f8acf407f27b722dd", "conversationId": "69d6e573dbea018d06e4e723"},
+    {"name": "Group 2", "groupId": "69d6e56f8acf407f27b72210", "conversationId": "69d6e573dbea018d06e4e720"},
+    {"name": "Group 3", "groupId": "69d6e56f8acf407f27b723a9", "conversationId": "69d6e573dbea018d06e4e726"},
+    {"name": "Group 4", "groupId": "69d6e5708acf407f27b72475", "conversationId": "69d6e573dbea018d06e4e729"},
+    {"name": "Group 5", "groupId": "69d6e5708acf407f27b72543", "conversationId": "69d6e573dbea018d06e4e72c"},
 ]
 
 # ─── SUBJECT ROTATION ─────────────────────────────────────────────────────────
