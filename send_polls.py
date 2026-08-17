@@ -546,7 +546,7 @@ Return ONLY a JSON array of exactly 5 objects, no markdown, no backticks:
 
     try:
         resp = groq_client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-120b",
             messages=[{"role": "user", "content": prompt}],
             temperature=0.3,
             max_tokens=3000,
@@ -579,7 +579,7 @@ Rules:
 
 Return ONLY the message text."""
     resp = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.9,
         max_tokens=150,
@@ -614,7 +614,7 @@ Return ONLY JSON: {"quote": "quote text"}"""
     ]
     cat = categories[date.today().toordinal() % len(categories)]
     resp = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {"role": "system", "content": system},
             {"role": "user",   "content": f"Category: {cat}\nSeed: {date.today().toordinal()}"},
@@ -646,7 +646,7 @@ Rules:
 
 Return ONLY the caption text."""
     resp = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.92,
         max_tokens=100,
@@ -699,7 +699,7 @@ Rules:
 
 Return ONLY the message text."""
     resp = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.92,
         max_tokens=250,
