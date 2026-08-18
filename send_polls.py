@@ -491,7 +491,7 @@ def download_drive_photo(service, file_id, dest_path):
 groq_client = Groq(api_key=GROQ_API_KEY)
 
 
-def sample_pyq_text(subject, chars=3000):
+def sample_pyq_text(subject, chars=1200):
     fname = PDF_DIR / f"{subject.lower()}_pyq.txt"
     if not fname.exists():
         return f"[No PYQ file for {subject} — use general JEE knowledge]"
@@ -549,7 +549,7 @@ Return ONLY a JSON array of exactly 5 objects, no markdown, no backticks:
             model="openai/gpt-oss-120b",
             messages=[{"role": "user", "content": prompt}],
             temperature=0.3,
-            max_tokens=3000,
+            max_tokens=2000,
             response_format={"type": "json_object"},
         )
         raw = resp.choices[0].message.content.strip()
