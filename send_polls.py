@@ -24,7 +24,10 @@ from groq import Groq
 
 # ─── SECRETS ──────────────────────────────────────────────────────────────────
 
-PW_TOKEN         = os.environ["PW_TOKEN"]
+_raw_token = os.environ["PW_TOKEN"]
+PW_TOKEN   = "".join(_raw_token.split())      # remove spaces, newlines, tabs
+if PW_TOKEN.lower().startswith("bearer"):
+    PW_TOKEN = PW_TOKEN[6:]                   # drop "Bearer" prefix if present
 GROQ_API_KEY     = os.environ["GROQ_API_KEY"]
 ALERT_EMAIL      = os.environ.get("ALERT_EMAIL", "")
 GMAIL_APP_PWD    = os.environ.get("GMAIL_APP_PWD", "")
