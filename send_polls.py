@@ -60,6 +60,7 @@ GROUPS = [
     {"name": "Group 3", "groupId": "69d6e56f8acf407f27b723a9", "conversationId": "69d6e573dbea018d06e4e726"},
     {"name": "Group 4", "groupId": "69d6e5708acf407f27b72475", "conversationId": "69d6e573dbea018d06e4e729"},
     {"name": "Group 5", "groupId": "69d6e5708acf407f27b72543", "conversationId": "69d6e573dbea018d06e4e72c"},
+    {"name": "Group 6", "groupId": "69cb7c0e36b09e3dea13561c", "conversationId": "69ce5365596edfc0201cf31b"},
 ]
 
 # ─── SUBJECT ROTATION ─────────────────────────────────────────────────────────
